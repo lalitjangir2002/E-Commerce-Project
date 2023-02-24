@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart|Your Items</title>
     <script src="https://kit.fontawesome.com/f8d76101bd.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./Cart.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="ipad.css" media="(max-width:800px)">
     <script src="index.js" defer></script>
+    <script src="cart.js" defer></script>
 </head>
 <body>
         <header id="header">
@@ -41,35 +43,35 @@
         <td>Remove</td>
         <td>Image</td>
         <td>Product</td>
-        <td>Price</td>
+        <!-- <td>Price</td> -->
         <td>Quantity</td>
-        <td>SubTotal</td>
+        <td class="Price">Price</td>
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+        <tr id="row1">
+            <td><a href="#"><i class="fa-regular fa-circle-xmark btn-remove"></i></a></td>
             <td><img src="img/products/f1.jpg" alt=""></td>
             <td>Cartoon Astronaunt T-Shirt</td>
-            <td>$118.19</td>
-            <td><input type="number" value="1"></td>
-            <td>$118.19</td>
+            <!-- <td>$118.19</td> -->
+            <td><input type="number" value="1" class="quantity"></td>
+            <td class="cart-price">$118.19</td>
         </tr>
-        <tr>
-            <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+        <tr id="row2">
+            <td><a href="#"><i class="fa-regular fa-circle-xmark btn-remove"></i></a></td>
             <td><img src="img/products/f2.jpg" alt=""></td>
             <td>Cartoon Design T-Shirt</td>
-            <td>$168.19</td>
-            <td><input type="number" value="1"></td>
-            <td>$168.19</td>
+            <!-- <td>$168.19</td> -->
+            <td><input type="number" value="2" class="quantity"></td>
+            <td class="cart-price">$168.19</td>
         </tr>
-        <tr>
-            <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+        <tr id="row3">
+            <td><a href="#"><i class="fa-regular fa-circle-xmark btn-remove"></i></a></td>
             <td><img src="img/products/f3.jpg" alt=""></td>
             <td>World Astronaunt T-Shirt</td>
-            <td>$220.50</td>
-            <td><input type="number" value="1"></td>
-            <td>$220.50</td>
+            <!-- <td>$220.50</td> -->
+            <td><input type="number" value="1" class="quantity"></td>
+            <td class="cart-price">$220.50</td>
         </tr>
         </tbody>
         </table>
@@ -83,17 +85,17 @@
             <div class="cart-total">
                 <h3>Cart Totals</h3>
                 <table>
-                        <tr>
+                        <!-- <tr>
                             <td>Cart Subtotal</td>
-                            <td>$335</td>
-                        </tr>
+                            <td class="subtotal">$506.88</td>
+                        </tr> -->
                         <tr>
                             <td>Shipping</td>
                             <td>FREE</td>
                         </tr>
                         <tr>
                             <td><strong>Total</strong></td>
-                            <td><strong>$335</strong></td>
+                            <td class="subtotal"><strong>$675.07</strong></td>
                         </tr>
                 </table>
                 <button>Proceed to checkout</button>
